@@ -14,7 +14,7 @@ public class PersonController {
 	@Autowired
 	PersonService personService;
 	
-	@GetMapping("/table")
+	@GetMapping(path="/table")
 	public String viewTable(final Model model) {
 		
 		final Flux<Person> personList = personService.allPersons();

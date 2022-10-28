@@ -7,18 +7,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import reactor.core.publisher.Flux;
 
 //@Controller
-//@RestControlle
+  @RestController
 //@RequestMapping
+//@ResponseBody
 public class PersonListController {
 
-//	//ejercicio2  //para que funcione el ejercicio 2 hay que separar el controller del restcontroller ,son incompatibles 
-//	@Autowired
-//	PersonService personservice;
 	
 	@GetMapping("/person-list-1")
 	public Flux<Person>PersonList1(){
